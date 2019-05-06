@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddAtividadesTable extends Migration
+class AddMensagensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class AddAtividadesTable extends Migration
      */
     public function up()
     {
-        Schema::create('mensagens', function (Blueprint $table) {
-            $table->increments('id');           //código identificador
-            $table->string('title');            //título da atividade
-            $table->string('description');      //descrição da atividade
-            $table->timestamps();               //registro created_at e updated_at
+        Schema::table('mensagens', function (Blueprint $table) {
+            //
         });
     }
 
